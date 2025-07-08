@@ -38,6 +38,9 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* INI PENGATURAN TULISAN SYAH JOHAN DAN GAMBAR */
@@ -46,6 +49,7 @@
     flex-direction: row;
     align-items: center;
     gap: 15px;
+
 }
 
 /* INI MENU HAMBURGER, KALAU DESKTOP DIA TER HIDE DULU */
@@ -53,6 +57,8 @@
     display: none;
     cursor: pointer;
     align-items: center;
+    justify-content: center;
+    height: 100%;
 }
 
 /* INI STYLE NAVIGATIONNYA */
@@ -119,10 +125,6 @@ li a:hover {
     flex-direction: column;
 }
 
-/* INI ADALAH STYLING FONT SYAH JOHAN YANG TERPISAH */
-.font-johan {
-    color: rgb(86, 119, 227);
-}
 
 /* INI ADALAH STYLING RESPONSIVE DARI HAMBURGER */
 
@@ -176,13 +178,16 @@ li a:hover {
 
 .footer {
     width: 100%;
-    padding: 5px 5px;
+    padding: 10px 5px;
     color: white;
     background-color: rgb(0, 0, 0);
     display: flex;
     justify-content: space-around;
     font-family: Sans-serif, Helvetica;
     flex-wrap: wrap;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+
 }
 
 
@@ -268,7 +273,7 @@ li a:hover {
     width: 100%;
     position: relative;
     margin-top: 10%;
-    padding-bottom: 6%;
+    padding-bottom: 3%;
 }
 
 .section {
@@ -289,6 +294,7 @@ li a:hover {
     border-radius: 50%;
     margin-right: 20px;
     z-index: 1;
+    border-color: antiquewhite;
 }
 
 .article_johan {
@@ -317,9 +323,33 @@ li a:hover {
     justify-content: flex-start;
 }
 
-.text-aboutme {
+
+.img_about {
+    width: 40px;
+}
+
+.container_contact {
+    display: flex;
+    justify-content: center;
+    padding: 20px 20px;
+    gap: 60px;
+    padding-left: 3%;
+}
+
+.container_contact_child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
 
 
+.imgsosmed {
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px
 }
 
 
@@ -331,7 +361,6 @@ li a:hover {
         display: flex;
         justify-content: center;
         width: 60%;
-
         margin: auto;
 
     }
@@ -362,8 +391,141 @@ li a:hover {
         justify-content: center;
     }
 
-    .greeting {
-        padding-top: 15%;
+    .text-aboutme {
+        padding-bottom: 15%;
     }
 
+    .greeting {
+        padding-top: 15%;
+        flex-wrap: wrap;
+        font-size: large;
+    }
+
+    .terimakasih {
+        padding-bottom: 10%;
+    }
+
+    .imgsosmed {
+        margin: auto;
+    }
+}
+
+
+
+/* SKILL */
+
+
+.judul_skill {
+    font-family: 'mycustomfont';
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10%;
+    padding-bottom: 5%;
+}
+
+
+.kolom-besar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 5px solid #191970;
+    border-radius: 20%;
+    box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.1);
+    width: 60%;
+    height: 60%;
+    padding: 20px 20px;
+
+}
+
+.container_daftar {
+    display: flex;
+
+
+}
+
+.container_daftar2 {
+    display: flex;
+
+}
+
+.kolom-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 15px;
+}
+
+.gambar-skill {
+    width: 40%;
+}
+
+.github {
+    width: 144px;
+    max-width: 40%;
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+
+    .judul_skill {
+        text-align: center;
+        padding-top: 40%;
+        font-size: medium;
+        margin: 0 20%;
+    }
+
+
+    .kolom-besar {
+        width: 70%;
+        height: 40vh;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        margin-top: 10%;
+
+    }
+
+    .gambar-skill {
+        width: 70%;
+    }
+
+    .kolom-logo {
+        font-size: 30%;
+        width: 100%;
+        height: 100;
+    }
+
+    .github {
+        max-width: 70%;
+    }
+
+    .container_daftar,
+    .container_daftar2 {
+        width: 100%;
+        margin: auto;
+        padding: auto;
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 1440px) {
+    .judul_skill {
+        padding-top: 20%;
+    }
+}
+
+@media (max-width: 415px) {
+
+    .judul_skill {
+        padding-top: 25%;
+    }
+
+    .kolom besar {
+        height: 30vh;
+    }
 }
